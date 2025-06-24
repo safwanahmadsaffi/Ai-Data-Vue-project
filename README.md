@@ -58,14 +58,6 @@
   🚀 About DataVue
 </h2>
 
-
-
-
-
-
-  ![WhatsApp Image 2024-08-30 at 22 40 54_207bfede](https://github.com/user-attachments/assets/aa143580-f541-4b2a-a27c-459ecaf30bcf)
-
-
 </p>
 
 DataVue is not just another data science tool; it's a revolutionary ecosystem designed to transform how we learn, understand, and apply data science. By seamlessly integrating cutting-edge AI with intuitive design, we're democratizing data science education and empowering the next generation of data wizards.
@@ -119,10 +111,6 @@ DataVue is not just another data science tool; it's a revolutionary ecosystem de
 <h2 align="center">
   💻 Quick Start Guide
 </h2>
-
-<p align="center">
-  <img src="https://cdn.worldvectorlogo.com/logos/quickstart.svg" alt="Installation Steps" width="40%"/>
-</p>
 
 ```bash
 # Clone the DataVue repository
