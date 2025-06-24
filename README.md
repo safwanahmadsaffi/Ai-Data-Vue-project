@@ -1,9 +1,6 @@
 
 <div align="center">
   
-  <!-- Animated Logo (use an animated GIF for the logo) -->
-  <img src="https://your-animated-logo-url.com/datavue-logo.gif" alt="DataVue Animated Logo" width="300"/>
-
   <!-- Animated Title (using custom HTML and inline CSS) -->
   <h1>
     <span style="background: linear-gradient(45deg, #FF6B6B, #4ECDC4, #45B7D1, #FDCB6E);
@@ -116,22 +113,6 @@ DataVue is not just another data science tool; it's a revolutionary ecosystem de
 - 🔒 **Enterprise-Grade Security**: Your data's safety is our top priority
 
 ---
-
-<!-- Demo Section with Embedded Video -->
-<h2 align="center">
-  🎥 See DataVue in Action
-</h2>
-  
-  <div class="video-container">
-      <a href="https://youtu.be/4eHreET_XYA?si=jGYNiRt8aSfQoNd1" target="_blank">
-          <img src="https://img.youtube.com/vi/4eHreET_XYA/maxresdefault.jpg" alt="DataVue Demo Video Thumbnail">
-      </a>
-  </div>
-
-<p align="center">
-  👆 Click the image to watch our demo video and see how DataVue is changing the game!
-</p>
-
 ---
 
 <!-- Installation Section with Animated Terminal -->
@@ -145,7 +126,7 @@ DataVue is not just another data science tool; it's a revolutionary ecosystem de
 
 ```bash
 # Clone the DataVue repository
-git clone https://github.com/muhammadibrahim313/DataVue--Hackathon-.git
+git clone https://github.com/name/DataVue.git
 
 # Navigate to the project directory
 cd datavue
@@ -157,22 +138,7 @@ pip install -r requirements.txt
 python run_datavue.py
 ```
 
-For a comprehensive setup guide, check out our [Installation Wizard](https://datavue.com/install).
-
 ---
-
-<!-- Team Section with Hover Effects -->
-## 👥 Meet Team Genalus
-
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/mj-awad17"><img src="https://github.com/mj-awad17.png" width="100px;" alt="M Jawad"/><br /><sub><b>M Jawad</b></sub></a><br /><small></small></td>
-    <td align="center"><a href="https://github.com/muhammadibrahim313"><img src="https://github.com/muhammadibrahim313.png" width="100px;" alt="M Ibrahim"/><br /><sub><b>M Ibrahim</b></sub></a></td>
-    <td align="center"><a href="https://github.com/AlishaAshraf"><img src="https://github.com/AlishaAshraf.png" width="100px;" alt="Alisha Ashraf"/><br /><sub><b>Alisha Ashraf</b></sub></a></td>
-    <td align="center"><a href="https://github.com/fatima5655"><img src="https://github.com/fatima5655.png" width="100px;" alt="Phool Fatima"/><br /><sub><b>Phool Fatima</b></sub></a></td>
-    <td align="center"><a href="https://github.com/Ahmad-Fakhar"><img src="https://github.com/Ahmad-Fakhar.png" width="100px;" alt="Ahmad Fakhar"/><br /><sub><b>Ahmad Fakhar</b></sub></a></td>
-  </tr>
-</table>
 
 ## 🤝 Contributing
 
@@ -186,24 +152,6 @@ We welcome contributions from the community! Whether it's bug fixes, feature add
 
 For more details, please read our [Contribution Guidelines](CONTRIBUTING.md).
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 📞 Get in Touch
-
-- 📧 Email: [Gmail](oppoibrahim23@gmail.com)
-- 🐦 Kaggle: [kaggle](https://www.kaggle.com/itshappy)
-- 💼 LinkedIn: [M. Ibrahim Qasmi](https://www.linkedin.com/in/muhammad-ibrahim-qasmi-9876a1297/)
-
----
-
-
-<p align="center">
-  Hover over our avatars to learn more about each team member!
-</p>
-
----
 
 <!-- Contributing Section with Animated Graph -->
 <h2 align="center">
@@ -219,20 +167,6 @@ We believe in the power of community. Whether you're a coding wizard, a data ent
 Check out our [Contribution Guidelines](CONTRIBUTING.md) to get started!
 
 ---
-
-<!-- Footer with Social Links -->
-<div align="center">
-  <h3>Connect with Us</h3>
-  <a href="https://www.facebook.com/profile.php?id=61560872765839">
-    <img src="https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white" alt="Facebook"/>
-  </a>
-  <a href="https://www.linkedin.com/in/muhammad-ibrahim-qasmi-9876a1297/">
-    <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-  </a>
-  <a href="https://www.linkedin.com/in/muhammad-ibrahim-qasmi-9876a1297/">
-    <img src="https://img.shields.io/badge/Discord-%237289DA.svg?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"/>
-  </a>
-</div>
 
 <div align="center">
   <sub>Built with ❤️ by Team GenAlus . Licensed under <a href="LICENSE">MIT</a>.</sub>

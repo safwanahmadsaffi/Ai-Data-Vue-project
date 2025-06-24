@@ -48,7 +48,7 @@ def load_css():
     }
     .app-button {
         background-color: white;
-        color: white;
+        color: #1e90ff;
         font-size: 12px;
         font-weight: bold;
         padding: 8px 16px;
@@ -58,6 +58,7 @@ def load_css():
         display: inline-block;
         text-decoration: none;
         transition: all 0.3s ease;
+        border: 1px solid #1e90ff;
     }
     .app-button:hover {
         background-color: #FFD35A;
@@ -75,12 +76,13 @@ def load_css():
     .circular-image {
         border-radius: 50%;
         overflow: hidden;
-        width: 120px;  /* Adjust the size as needed */
-        height: 120px; /* Adjust the size as needed */
+        width: 120px;
+        height: 120px;
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px solid #1e90ff; /* Optional border */
+        border: 2px solid #1e90ff;
+        margin: auto;
     }
     .circular-image img {
         width: 100%;
@@ -93,17 +95,10 @@ def load_css():
 def new_line():
     st.markdown("<br>", unsafe_allow_html=True)
 
-# Define a function to load the Lottie animation
-def load_lottieurl(url: str):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
-
 # Create the About Us page
 def about_page():
     load_css()  # Load custom CSS
-    
+
     # Title Page
     st.markdown("<h1 class='main-title'> 🔎 About Us - Data Vue</h1>", unsafe_allow_html=True)
     new_line()
@@ -118,69 +113,32 @@ def about_page():
 
     st.markdown("<h2 class='section-header'>👤 Meet the Team</h2>", unsafe_allow_html=True)
 
-    # Define the team members with online image URLs
+    # Define the team members with GitHub links
     team_members = [
-        {
-            "name": "M Jawad",
-            "role": "Sir",
-            "image": "https://media.licdn.com/dms/image/v2/D4D03AQGhdbU8hITDEA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1709276424296?e=1730332800&v=beta&t=3RwehLr_ZcXAVxe2EZKHN5oaDPBxlaa_Jr9LjrSgFdo",  # Replace with the actual URL
-            "linkedin": "https://www.linkedin.com/in/muhammad-jawad-86507b201/",
-            "github": "https://github.com/mj-awad17",
-        },
-        {
-            "name": "M Ibrahim",
-            "role": "",
-            "image": "https://media.licdn.com/dms/image/v2/D4D03AQFSX9z8C2gRTg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1722410662074?e=1730332800&v=beta&t=meNgmw_h6m4cv_FzEP3fOZI-tjdaUGXcNPimiYMfDnQ",  # Replace with the actual URL
-            "linkedin": "https://www.linkedin.com/in/muhammad-ibrahim-qasmi-9876a1297/",
-            "github": "https://github.com/muhammadibrahim313",
-        },
-        {
-            "name": "Alisha Ashraf",
-            "role": "",
-            "image": "https://media.licdn.com/dms/image/v2/D4E03AQE8YF_XiyirPQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1720500608337?e=1730332800&v=beta&t=cXDZ22_tBS_pFcyedLvNvnm5jvkqtmzPri2KNudD6J4",  # Replace with the actual URL
-            "linkedin": "https://www.linkedin.com/in/alisha-ashraf-b73404301",
-            "github": "https://github.com/AlishaAshraf",
-        },
-        {
-            "name": "Phool Fatima",
-            "role": "",
-            "image": "https://media.licdn.com/dms/image/v2/C4D03AQH_YB-K8letfQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1658415696189?e=1730332800&v=beta&t=RHPdqVHpH5QpJ31HduZcqPs6kztEauBP3vX0VqLxF2w",  # Replace with the actual URL
-            "linkedin": "https://www.linkedin.com/in/phool-fatima-602a7a23b/",
-            "github": "https://github.com/fatima5655",
-        },
-        {
-            "name": "Ahmad Fakhar",
-            "role": "",
-            "image": "https://avatars.githubusercontent.com/u/155258276?v=4",  # Replace with the actual URL
-            "linkedin": "https://www.linkedin.com/in/ahmad-fakhar-357742258/",
-            "github": "https://github.com/Ahmad-Fakhar",
-        },
-       
+        {"name": "Ahmad", "role": "Data Scientist", "image": "ali.jpg", "github": "https://github.com/safwanahmadsaffi"},
+        {"name": "Safwan", "role": "Frontend Developer", "image": "sara.jpg", "github": "https://github.com/safwanahmadsaffi"},
+        {"name": "Umeer", "role": "ML Engineer", "image": "zain.jpg", "github": "https://github.com/safwanahmadsaffi"}
     ]
 
-    # Create columns for each team member
     cols = st.columns(len(team_members))
 
     # Populate each column with a team member's details
     for col, member in zip(cols, team_members):
         with col:
-            # Display the image using st.image with customized styling
             st.markdown(f"""
                 <div class='circular-image'>
                     <img src='{member["image"]}' />
                 </div>
-                <div class='feature-box'>
+                <div class='feature-box' style='text-align:center'>
                     <strong>{member['name']}</strong><br>
                     <em>{member['role']}</em><br>
-                    <a href="{member['linkedin']}" target="_blank" class="app-button">LinkedIn</a> | 
                     <a href="{member['github']}" target="_blank" class="app-button">GitHub</a>
                 </div>
-                """, unsafe_allow_html=True
-            )
+            """, unsafe_allow_html=True)
 
     new_line()
 
-    # What this app does with the main, quickml, and study_time pages
+    # What this app does
     st.markdown("<h2 class='section-header'>What This App Does</h2>", unsafe_allow_html=True)
     st.markdown("""
     <div class='feature-box'>
@@ -209,6 +167,7 @@ def about_page():
     </div>
     """, unsafe_allow_html=True)
     new_line()
+
 
 if __name__ == "__main__":
     about_page()

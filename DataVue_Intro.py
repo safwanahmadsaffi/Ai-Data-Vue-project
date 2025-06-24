@@ -122,33 +122,5 @@ def main():
         </div>
         """, unsafe_allow_html=True)
 
-    # Demo video
-    st.markdown("<h2 class='section-header'>🎥 See DataVue in Action</h2>", unsafe_allow_html=True)
-    
-    # Embed YouTube video using Streamlit's built-in method
-    st.video("https://www.youtube.com/embed/4eHreET_XYA")
-
-
-    # Main apps
-    st.markdown("<h2 class='section-header'>🚀 Explore DataVue</h2>", unsafe_allow_html=True)
-    col1, col2, col3, col4 = st.columns(4)
-
-    with col1:
-        st.markdown("<a href='/data_analysis' target='_self' class='app-button'>📈 Data Analysis</a>", unsafe_allow_html=True)
-    with col2:
-        st.markdown("<a href='/ai_assistant' target='_self' class='app-button'>🤖 AI Assistant</a>", unsafe_allow_html=True)
-    with col3:
-        st.markdown("<a href='/auto_eda' target='_self' class='app-button'>🔍 Auto EDA</a>", unsafe_allow_html=True)
-    with col4:
-        st.markdown("<a href='/learning_resources' target='_self' class='app-button'>📚 Learning Resources</a>", unsafe_allow_html=True)
-
-    # GitHub and Demo links
-    st.markdown("<h2 class='section-header'>🌐 Connect with DataVue</h2>", unsafe_allow_html=True)
-    col1, col2 = st.columns(2)
-    with col1:
-        st.markdown("<a href='https://github.com/yourusername/datavue' target='_blank' class='app-button'>👨‍💻 GitHub Repository</a>", unsafe_allow_html=True)
-    with col2:
-        st.markdown("<a href='https://demo.datavue.com' target='_blank' class='app-button'>🖥 Live Demo</a>", unsafe_allow_html=True)
-
 if __name__ == "__main__":
     main()
